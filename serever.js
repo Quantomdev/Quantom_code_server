@@ -18,7 +18,7 @@ const Port=process.env.PORT || 4000;
 app.use("/api/auth",authRoutes);
 app.use("/api/gemini",chatroutes);
 app.use("/api/courses",courseRoutes)
-
+console.log("hi");
 app.listen(Port, () => {
     DbConnect();
     console.log(`Server is running on port ${Port}`);
